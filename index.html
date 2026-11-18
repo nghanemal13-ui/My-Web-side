@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نورة غانم الشايف | ملف الشخصي</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --accent-hover: #0ea5e9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        section h2 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: var(--accent-color);
+            border-bottom: 2px solid rgba(56, 189, 248, 0.2);
+            padding-bottom: 6px;
+        }
+
+        p.bio {
+            line-height: 1.6;
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent-color);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        .interactive-box {
+            background-color: rgba(15, 23, 42, 0.5);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: var(--accent-hover);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>نوره غانم الشايف</h1>
+            <p>متخصصة في تقنية المعلومات (IT) وتطوير الويب والشبكات</p>
+        </header>
+
+        <section>
+            <h2>نبذة تعريفية</h2>
+            <p class="bio">
+                طالبة جامعية في تخصص تقنية المعلومات، شغوفة بالتقنية، شبكات الحاسب، وإدارة الأنظمة وبرمجة الويب. أسعى دائماً لتطوير حلول برمجية ومشاريع تقنية مبتكرة تلبي الاحتياجات العملية.
+            </p>
+        </section>
+
+        <section>
+            <h2>لغات البرمجة والتقنيات</h2>
+            <div class="tags-container">
+                <span class="tag">HTML5 / CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PowerShell</span>
+                <span class="tag">Linux Terminal</span>
+                <span class="tag">Windows Server 2019</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>الأدوات والمهارات المهنية</h2>
+            <div class="tags-container">
+                <span class="tag">Cisco Packet Tracer</span>
+                <span class="tag">VMware Workstation</span>
+                <span class="tag">VS Code</span>
+                <span class="tag">إدارة وتصميم الشبكات</span>
+                <span class="tag">منهجيات البحث التقني</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>تواصل سريع</h2>
+            <div class="interactive-box">
+          
+              
+            </div>
+        </section>
+
+        <footer>
+            جميع الحقوق محفوظة &copy; 2026 - نوره غانم الشايف
+        </footer>
+    </div>
+
+    <script>
+        function changeMessage() {
+            const messages = [
+                "شكراً لزيارتك موقعي الشخصي!",
+                "أتمنى لك يوماً تقنياً رائعاً!",
+                "مرحباً بكِ دائماً في عالم البرمجة والتقنية.",
+                "أهلاً بك في ملفي الشخصي المدمج بلغة واحدة!"
+            ];
+            const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+            document.getElementById('welcomeMsg').textContent = randomMsg;
+        }
+    </script>
+
+</body>
+</html>
